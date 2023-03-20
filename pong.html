@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title>Gra</title>
+
+		<meta charset="UTF-8" />
+
+		<style>
+			body{
+				width: 100%;
+				height: 100%;
+  				margin: 0;
+				background-color: blue; 
+				border: 0px color black;
+			}
+			
+		</style>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="pong.js"></script>
+	</head>
+
+	<body>
+		<button onclick="easyGame()" style="background-color: green; width: 200; height: 100; font-size: 50; position: absolute; top: 20%; left: 42%">Easy</button>
+		<p id = "easy"></p>
+		<button onclick="normalGame()" style="background-color: yellow; width: 200; height: 100; font-size: 50; position: absolute; top: 40%; left: 42%">Normal</button>
+		<p id = "normal"></p>
+		<button onclick="hardGame()" style="background-color: red; width: 200; height: 100; font-size: 50; position: absolute; top: 60%; left: 42%">Hard</button>
+		<p id = "hard"></p>
+			<canvas id="game" style="position: fixed"></canvas>
+		
+		
+	</body>
+</html>
+

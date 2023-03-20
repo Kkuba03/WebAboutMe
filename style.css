@@ -1,0 +1,159 @@
+html {
+    scroll-behavior: smooth; /* dzieki temu po kliknięciu w link przechodzi się do poszczególnych sekcji*/
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: "Poppins", Arial, Helvetica, sans-serif
+}
+
+#navbar {
+    margin: 0;
+    padding: 5px 0;
+    width: 100%;
+    height: 50px;
+    position: sticky; /*navbar jest przyklejony do góry podczas scrollowania*/
+    top: 0;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 10px 10px -5px rgba(0,0,0,0.1); /**/
+}
+
+#navbar ul { /*odwołanie do potomka navbaru czyli ul*/
+    display: flex; /*ul układa się poziomo a nie pionowo */ 
+    margin: 10px 0px 10px auto;
+    width: 55%;
+    justify-content: space-evenly; /* ul przestają być ściśnięte*/
+    list-style: none;
+}
+
+#navbar ul li a {
+    margin-left: 3px; 
+    color: black;
+    opacity: 0.7; /*przezroczystość*/
+    font-size: 1.2rem;
+    font-family: "Poppins" ,Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover { /*w momencie kiedy użytkownik najedzie myszką*/
+    color: lightgreen;
+    opacity: 1;
+    text-decoration: underline;
+    transition: all 0.15s;
+}
+
+#intro-section {
+    height: 300px;
+    background-image: url("https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536__340.jpg");
+    background-size: cover; /*dostosowuje sie do szerokości ekranu*/
+}
+
+#welcome-section {
+    margin: 50px;
+    display: flex;
+    justify-content: center; /*wyrównają się na osi x*/
+}
+
+.message{
+    display: flex;
+    margin: 20px;
+    width: 500px;
+    justify-content: center;
+    align-items: center; /*centrowanie na osi y */
+    font-size: 2rem; /*rozmiar czcionki*/
+    font-family: "Poppins" ,Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.message img{
+    max-width: 100%;
+}
+
+section{
+    margin-top: 1rem;
+    padding-top: 2rem;
+
+}
+.section-heading{
+    font-size: 2 rem;
+    text-align: center;
+
+}
+.about-container {
+    display: flex;
+    justify-content: center;
+}
+div.my-information {
+    display: block; /*wszystkie elementy z prawej strony tego diva bedą jeden pod drugim*/
+    font-size: 1.5rem;
+    text-align: left;
+}   
+
+#skills-section {
+    background-color: black;
+    color: white;
+}
+
+.skills-container {
+    display: flex; /*ułożą się jeden obok drugiego*/
+    flex-wrap: wrap; /*wartości które sie nie mieszczą zawijaja sie*/
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+}
+
+.skill-information {
+    padding: 2rem;
+    text-align: center;
+}
+
+.skill-name {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+}
+
+.skill-information progress {
+    background-color: white;
+    border: 1px solid white;
+}
+
+.skill-information progress::-webkit-progress-value { /*odswołanie do pseudo elementu*/
+    background-color: white;
+    border-radius: 0;
+}
+.skill-information progress::-webkit-progress-bar  {
+    background-color: black;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projects-container .image-box {
+    margin: 5px;
+}
+
+.image-box a {
+    text-decoration: none;
+    text-align: center;
+}
+
+#contact-section {
+    margin-top: 50px;
+    padding: 50px;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#contact-section a {
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+}
