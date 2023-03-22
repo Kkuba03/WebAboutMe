@@ -50,12 +50,6 @@ body {
     background-size: cover; /*dostosowuje sie do szerokości ekranu*/
 }
 
-#welcome-section {
-    margin: 50px;
-    display: flex;
-    justify-content: center; /*wyrównają się na osi x*/
-}
-
 .message{
     display: flex;
     margin: 20px;
@@ -157,3 +151,18 @@ div.my-information {
     color: white;
     text-decoration: none;
 }
+
+/*<section id="welcome-section">
+            <div class="message">
+                <p>Hello! <br> I am Frontend Developer</p>
+            </div>
+            <div class="message">
+                <img src="https://cdn.pixabay.com/photo/2016/10/13/16/26/web-agency-1738168__340.jpg" alt="">
+            </div>
+        </section>*/
+        
+        /*#welcome-section {
+            margin: 50px;
+            display: flex;
+            justify-content: center; wyrównają się na osi x
+        }*/
