@@ -209,5 +209,3 @@ function hardGame(){
     start();
     update();
 }
-
-
